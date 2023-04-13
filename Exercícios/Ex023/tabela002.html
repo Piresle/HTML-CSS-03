@@ -4,46 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
     <title>Tabelas</title>
-    <style>
-        body {
-            font-family: 'Courier New', Courier, monospace;
-        }
-        table {
-            width: 500px;
-        }
-        thead {
-            background-color: bisque;
-            color: brown;
-        }
-        td, th {
-            border: 1px solid black;
-            padding: 10px;
-        }
-        tfoot {
-            background-color: bisque;
-            color: brown;
-        }
-        .num {
-            text-align: right;
-        }
-    </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <!-- ANATOMIA PARA TABELAS GRANDES 
-            - THEAD
-                -TR / TD / TH
-            - TBODY
-                -TR / TD / TH
-            - TFOOT
-                -TR / TD / TH
+        TABLE
+            CAPTION (legenda da tabela)
+            THEAD
+                TR / TD / TH
+            TBODY
+                TR / TD / TH
+            TFOOT
+                TR / TD / TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
 
